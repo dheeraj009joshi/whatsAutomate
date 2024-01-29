@@ -6,7 +6,7 @@ import os
 import time
 
 # Specify the path to your ChromeDriver executable
-driver_path = "python_server\chromedriver.exe"
+driver_path = "chromedriver.exe"
 
 # Create a Service object with the executable path
 chrome_service = ChromeService(executable_path=driver_path)
@@ -14,7 +14,6 @@ chrome_service = ChromeService(executable_path=driver_path)
 # Create a new instance of the Chrome webdriver, passing the Service object
 driver = webdriver.Chrome(service=chrome_service)
 driver.get("http://web.whatsapp.com")
-# os.system('notify-send  "-i" call-start "Whatsapp Monitor Start" "Developed By RIZWAN AHMAD(rizwansoaib@gmail.com)"')
 name=input("Please Enter Name for search online status: ")
 
 while True:
